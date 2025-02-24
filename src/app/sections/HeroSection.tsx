@@ -46,9 +46,12 @@ function HeroSection() {
             <p className='text-4xl font-bold  '>
               Your Marketing & Growth Partners
             </p>
-            <p className='text-sm mb-4'>
-              Transforming Strategies into Results. AI-driven insights, seamless execution, and measurable growth tailored for your business.
-            </p>
+            <p className="text-sm mb-4">
+  Transforming Strategies into Results.<br className="block sm:hidden" />
+  AI-driven insights, seamless execution, and measurable growth tailored for your business.
+</p>
+
+
             <Link href={"#contactUs"}> 
             <button className='px-5 py-2 bg-white text-[#4460EF] rounded-xl font-bold text-sm'>
               Start Growing Today
