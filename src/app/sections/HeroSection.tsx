@@ -18,7 +18,7 @@ function HeroSection() {
             </p>
             <p className='text-md text-start w-[400px]'>Transforming Strategies into Results. AI-driven insights, seamless execution, and measurable growth tailored for your business.</p>
             <Link href="#contactUs">  
-            <button className='mt-4 px-6 py-2 bg-white text-[#4460EF] rounded-lg font-bold hover:bg-gray-200'>
+            <button className='mt-4 px-6 py-2 bg-white text-[#4460EF] rounded-xl font-bold hover:bg-gray-200'>
               Start Growing Today
             </button>
             </Link>
@@ -50,7 +50,7 @@ function HeroSection() {
               Transforming Strategies into Results. AI-driven insights, seamless execution, and measurable growth tailored for your business.
             </p>
             <Link href={"#contactUs"}> 
-            <button className='px-5 py-2 bg-white text-[#4460EF] rounded-lg font-bold text-sm'>
+            <button className='px-5 py-2 bg-white text-[#4460EF] rounded-xl font-bold text-sm'>
               Start Growing Today
             </button>
             </Link>

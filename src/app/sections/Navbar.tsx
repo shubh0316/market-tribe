@@ -30,7 +30,7 @@ function Navbar() {
           {/* Button */}
           <div className="hidden md:block">
             <Link href={"#contactUs"}> 
-            <Button  className='border hover:bg-[#2E46C4] hover:text-white  px-6 py-4 text-white text-md font-semibold bg-[#2E46C4]'>Let&apos;s Talk</Button>
+            <Button  className='border hover:bg-[#2E46C4] rounded-xl hover:text-white  px-6 py-4 text-white text-md font-semibold bg-[#2E46C4]'>Let&apos;s Talk</Button>
             </Link>
           </div>
           
@@ -54,7 +54,7 @@ function Navbar() {
           <Link href="#ourServices" className="text-md text-[#002147] hover:text-[#2E46C4]">What We Do</Link>
           <Link href="#ourProcess" className="text-md text-[#002147] hover:text-[#2E46C4]">Our Process</Link>
           <Link href={"#contactUs"}> 
-        <Button className=' text-white px-6 py-3 text-md bg-[#2E46C4]'>Let&apos;s Talk</Button>
+        <Button className=' text-white px-6 py-3 rounded-xl text-md bg-[#2E46C4]'>Let&apos;s Talk</Button>
           </Link>
       </motion.div>
     </nav>

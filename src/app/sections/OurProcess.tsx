@@ -65,7 +65,7 @@ function OurProcess() {
               From Insight to Impact: The Process We Follow for Achieving Results
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 md:mt-10">
+          <div className="grid grid-cols-1 rounded-xl sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 md:mt-10">
           {processSteps.map((step, index) => (
   <div
     key={index}
