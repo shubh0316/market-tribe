@@ -89,16 +89,17 @@ function DesktopView() {
                 hoveredCard === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <div className="grid grid-cols-3 gap-x-2 gap-y-1">
-                {service.points.map((point, i) => (
-                  <div
-                    key={i}
-                    className="text-md text-[#180D51] font-medium relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-2xl before:font-bold"
-                  >
-                    {point}
-                  </div>
-                ))}
-              </div>
+              <div className="flex flex-wrap gap-x-4 gap-y-2">
+  {service.points.map((point, i) => (
+    <div
+      key={i}
+      className="text-md text-[#180D51] font-medium relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-2xl before:font-bold"
+    >
+      {point}
+    </div>
+  ))}
+</div>
+
             </div>
             <div>
               <Image src={service.image} alt="marketing tribe" className="w-full mt-6 h-auto" />
@@ -146,7 +147,7 @@ const MobileView = () => {
               )}
             </button>
             <div
-              className={`mt-2 grid grid-cols-2 gap-x-2 gap-y-1 overflow-hidden transition-all duration-[700ms] ease-in-out ${
+              className={`mt-2 flex flex-wrap gap-x-2 gap-y-2 overflow-hidden transition-all duration-[700ms] ease-in-out ${
                 expandedCard === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
