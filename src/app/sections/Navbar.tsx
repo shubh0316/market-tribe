@@ -48,14 +48,15 @@ function Navbar() {
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
         transition={{ duration: 0.3, ease: 'easeInOut' }}
-        className="absolute w-full bg-white  overflow-hidden md:hidden flex flex-col items-start space-y-4 py-4 px-8"
+        className="absolute w-full bg-white  overflow-hidden md:hidden flex flex-col  space-y-4 py-4 px-8"
       >
-          <Link href="#aboutUs" className="text-md text-[#002147] hover:text-[#2E46C4]">About Us</Link>
-          <Link href="#ourServices" className="text-md text-[#002147] hover:text-[#2E46C4]">What We Do</Link>
-          <Link href="#ourProcess" className="text-md text-[#002147] hover:text-[#2E46C4]">Our Process</Link>
-          <Link href={"#contactUs"}> 
-        <Button className=' text-white px-6 py-3 rounded-xl text-md bg-[#2E46C4]'>Let&apos;s Talk</Button>
-          </Link>
+          <Link href="#aboutUs" className="text-md text-[#002147] items-start hover:text-[#2E46C4]">About Us</Link>
+          <Link href="#ourServices" className="text-md text-[#002147] items-start  hover:text-[#2E46C4]">What We Do</Link>
+          <Link href="#ourProcess" className="text-md text-[#002147] items-start hover:text-[#2E46C4]">Our Process</Link>
+          <Link href="#contactUs" className="flex justify-center"> 
+    <Button className='text-white w-full px-6 py-3 rounded-xl text-md bg-[#2E46C4] max-w-md mx-auto'>Let&apos;s Talk</Button>
+</Link>
+
       </motion.div>
     </nav>
   );

@@ -3,10 +3,10 @@
 "use client";
 import React, { useState } from "react";
 import Container from "./Container";
-import image1 from "@/assets/image1.png";
 import Image from "next/image";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import image1 from "@/assets/image1.png";
 import image2 from "@/assets/image2.png";
-import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const services = [
   {
@@ -57,8 +57,9 @@ function OurService() {
   );
 }
 
-const DesktopView = () => {
+function DesktopView() {
   const [hoveredCard, setHoveredCard] = useState(null);
+
   return (
     <div className="flex flex-col space-y-4 md:space-y-6 items-start">
       <div className="text-[#F7A400] font-semibold capitalize">OUR SERVICES</div>
@@ -83,6 +84,22 @@ const DesktopView = () => {
             <p className="text-sm md:text-lg text-[#180D51] text-start font-normal">
               {service.description}
             </p>
+            <div
+              className={`hidden md:block overflow-hidden transition-all duration-500 ${
+                hoveredCard === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <div className="grid grid-cols-3 gap-x-2 gap-y-1">
+                {service.points.map((point, i) => (
+                  <div
+                    key={i}
+                    className="text-md text-[#180D51] font-medium relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-2xl before:font-bold"
+                  >
+                    {point}
+                  </div>
+                ))}
+              </div>
+            </div>
             <div>
               <Image src={service.image} alt="marketing tribe" className="w-full mt-6 h-auto" />
             </div>
@@ -91,10 +108,11 @@ const DesktopView = () => {
       </div>
     </div>
   );
-};
+}
+
 const MobileView = () => {
   const [expandedCard, setExpandedCard] = useState(null);
-  
+
   return (
     <div className="flex flex-col space-y-4 items-start">
       <div className="text-[#F7A400] font-semibold capitalize">OUR SERVICES</div>
@@ -129,7 +147,7 @@ const MobileView = () => {
             </button>
             <div
               className={`mt-2 grid grid-cols-2 gap-x-2 gap-y-1 overflow-hidden transition-all duration-[700ms] ease-in-out ${
-                expandedCard === index ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+                expandedCard === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
               {service.points.map((point, i) => (
