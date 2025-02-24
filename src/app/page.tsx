@@ -6,6 +6,7 @@ import OurProcess from "./sections/OurProcess";
 import OurBrands from "./sections/OurBrands";
 import ContactForm from "./sections/ContactForm";
 import Footer from "./sections/Footer";
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
