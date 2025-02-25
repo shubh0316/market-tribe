@@ -6,7 +6,6 @@ import Container from "./Container";
 import Image from "next/image";
 import contact from "@/assets/contact.png";
 import { toast } from "sonner";
-import { Resend } from "resend";
 
 
 function ContactForm() {
