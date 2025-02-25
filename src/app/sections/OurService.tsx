@@ -147,7 +147,7 @@ const MobileView = () => {
               )}
             </button>
             <div
-              className={`mt-2 flex flex-wrap gap-x-2 gap-y-2 overflow-hidden transition-all duration-[700ms] ease-in-out ${
+              className={`mt-2 flex flex-col gap-x-2 gap-y-2 overflow-hidden transition-all duration-[700ms] ease-in-out ${
                 expandedCard === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >

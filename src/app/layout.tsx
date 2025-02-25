@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
 import Cursor from "./Cursor";
+import { Toaster } from "sonner";
 
 const jost = Jost({ subsets: ["latin"], variable: "--font-jost" });
 
@@ -17,8 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jost.variable} antialiased`}>{children}
-      <Cursor />
+      <body className={`${jost.variable} antialiased`}>
+        {children}
+        <Cursor />
+        <Toaster  />
       </body>
     </html>
   );
