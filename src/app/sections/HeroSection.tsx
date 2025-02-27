@@ -19,7 +19,7 @@ function HeroSection() {
             <p className="text-md text-start w-[400px]">
   Transforming Strategies into Results. 
   <span className="hidden md:inline"><br /></span> 
-  AI-driven insights, seamless execution, and measurable growth tailored for your business.
+  AI-driven insights, seamless execution,<span className="hidden md:inline"><br /></span>  and measurable growth tailored for your business.
 </p>
             <Link href="#contactUs">  
             <button className='mt-4 px-6 py-2 bg-white text-[#4460EF] rounded-xl font-bold hover:bg-gray-200'>
