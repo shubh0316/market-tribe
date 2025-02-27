@@ -28,7 +28,7 @@ const services = [
     image: image1,
   },
   {
-    title: "Build Trust to drive revenue",
+    title: "Build Trust To Drive Revenue",
     description:
       "Turn curiosity into commitment through personalized engagement strategies like lead nurturing, webinars, and tailored campaigns.",
     points: [
