@@ -62,7 +62,7 @@ function OurProcess() {
           <div className="flex flex-col space-y-4 md:space-y-6 items-start">
             <div className="text-[#F7A400] font-semibold capitalize">OUR PROCESS</div>
             <div className="text-[#180D51] font-bold text-2xl md:text-4xl">
-              From Insight to Impact: The Process We Follow for Achieving Results
+              From Insight to Impact
             </div>
           </div>
           <div className="grid grid-cols-1 rounded-xl sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 md:mt-10">
